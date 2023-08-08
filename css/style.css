@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html, body {
+    background-color: #f0f2f5;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+section.chamada .container {
+    background-color: rgb(214, 214, 214);
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.login .container {
+    margin: 100px auto;
+    width: 90%;
+    height: 450px;
+    max-width: 900px;
+}
+
+
+.chamada {
+    padding: 100px 0;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.facebook {
+    background-image: url('../images/facelogo.png');
+    background-size: 100% 100%;
+    max-width: 230px;
+    height: 50px;
+}
+
+.chamada-texto p {
+    max-width: 430px;
+    margin-right: 2%;
+    line-height: 29px;
+    font-size: 23px;
+    margin:15px 0;
+    font-weight: bold;
+}
+
+
+form {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.form .container{
+    box-shadow: 5px 5px 10px 1px #ccc;
+    border-radius: 10px;
+    margin: 40px 0;
+    float: right;
+    background-color: white;
+    max-width: 370px;
+    height: 330px;
+}
+
+.form .w100 {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form .container .w100 input[type=text],
+.form .container .w100 input[type=password], 
+.form .container  .w100 input[type=submit] {
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+form .container .w100 input[type=text]:focus {
+    border: 1px solid #1877f2
+}
+
+.form .container .w100 input[type=password]:focus {
+    border: 1px solid #1877f2;
+} 
+
+.form .container  .w100 input[type=submit] {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: #1877f2;
+}
+
+.form .forget {
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.form .container a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.form .container .line {
+    width: 90%;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    margin: 15px auto;
+}
+
+.form .container .w50 input[type=submit] {
+    text-align: center;
+    margin: 2% auto;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    background-color: #42b72a;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form .container .w50 {
+    text-align: center;
+    padding: 2% auto;
+}
+
+.criar {
+    text-align: center;
+    display: flex;
+    max-width: 370px;
+    font-size: 12px;
+    margin: 30px 2%;
+}
+
+.criar .criar-a {
+    font-weight: bold;
+    line-height: 18px;
+    width: 100%;
+}
+
+.criar .criar-a a {
+    font-weight: bold;
+    font-size: 14px;
+    color: black
+}
+
+.criar .criar-a a:hover {
+    text-decoration:underline;
+}
+
+@media screen and (max-width: 680px) {
+    .login{
+        margin: 10px auto;
+        width: 100%;
+        max-width: 500px;
+        height: 600px;
+    }
+
+    .login .container {
+        margin: 30px auto;
+    }
+
+    .chamada {
+        text-align: center;
+        padding-top: 0px;
+        height: 30%;
+        width: 100%;
+    }
+    .facebook {
+        margin: 0 auto;
+    }
+
+    .chamada-texto p {
+        margin: 5% auto;
+        width: 80%;
+        line-height: 29px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form .form .container {
+        text-align: center;
+        float: none;
+        margin: 14% auto;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .chamada {
+        height: 40%;
+        margin: 4% 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .facebook{
+        width: 130px;
+        height: 30px;
+    }
+
+    .chamada-texto p{
+        font-size: 15px;
+    }
+
+    .chamada {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .chamada-texto p{
+        display: none;
+        margin: none;
+    }
+
+    .chamada{
+        height: 10%;
+        margin: none;
+    }
+
+    form{
+        margin-top: -50px;
+    }
+
+    .form .container .w50 input[type=submit] {
+        margin: 1% auto;
+        cursor: pointer;
+        border: 0;
+        color: white;
+        background-color: #42b72a;
+        outline: 0;
+        border-radius: 5px;
+        width: 90%;
+        height: 50px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
